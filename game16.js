@@ -380,7 +380,8 @@ Coin.prototype.collide = function(state) {
 	let status = state.status;
 	state.player.score += 100;
 	var score = window.parent.document.getElementById('score'); 
-	score.innerHTML = "Score: ${state.player.score}";
+	var theScore = sprintf("Score %d", score);
+	score.innerHTML = theScore;
 	return new State(state.level, newState, status);
 };
 
