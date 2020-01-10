@@ -1,0 +1,38 @@
+
+body {
+	background-color: black;
+}	
+
+#lives {
+   position: absolute;
+   font-size: 2em;
+   color: red;
+   font-family: 'magic_school_oneregular';
+   top: -70px;
+   left: 50px;
+}
+
+#score {
+   position: absolute;
+   font-size: 2em;
+   color: red;
+   font-family: 'magic_school_oneregular';
+   top: -70px;
+   left: 700px;
+}
+
+#gameContainer {
+	position: absolute;
+	top: 30vh;
+	left: 20vw;
+	width: 900px;
+	height: 720px;
+}
+
+#theGameBox {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 900px;
+	height: 670px;
+}

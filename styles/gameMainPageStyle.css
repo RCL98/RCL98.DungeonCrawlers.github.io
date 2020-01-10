@@ -1,7 +1,6 @@
 
 body {
-	background-color: #D75C50;
-	background-image: radial-gradient(red, #EEA30F, #D75C50);
+	background-color: #EEA30F;
 }	
 
 #title {
@@ -17,7 +16,7 @@ body {
 	font-family: 'magic_school_oneregular';
 	font-size: 1.2em;
 	color: blue;
-	background-color: F5123B;
+	background-color: #F5123B;
 	border-color: black;
 	width: 5vw;
 	top: 18vh;
