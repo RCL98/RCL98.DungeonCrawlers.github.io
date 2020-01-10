@@ -1,0 +1,59 @@
+<!DOCTYPE !html>
+<html>
+
+	<head>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<link rel = "stylesheet" href = "styles/gameMainPageStyle.css">
+		<link rel = "stylesheet" href = "styles/magic/stylesheet.css">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<title> Dungeon Crawlers </title>
+	</head>
+	
+	<body>
+		<h1 id = "title"> DUNGEON CRAWLERS </h1>
+		<div id = "gameContainer">
+			<h2 id = "lives">Lives: 0</h3>
+			<h2 id = "score">Score: 0</h3>
+			<button id = "startGame" > PLAY </button>
+		</div>
+	</body>
+	
+	<script>
+		document.getElementById('startGame').onclick = function() {
+		   var iframe = document.createElement('iframe');
+		   var lives = document.getElementById("lives");
+		   var score = document.getElementById("score");
+		   var container = document.getElementById('gameContainer');
+		   iframe.id = "gameBox";
+		   iframe.src = 'game.html';
+		   container.appendChild(iframe);
+		   this.style.display = "none";
+		   lives.style.display = "inline";
+		   score.style.display = "inline";
+		};
+		
+		document.onkeydown = function(evt) {
+			evt = evt || window.event;
+			var isEscape = false;
+			if ("key" in evt) {
+				isEscape = (evt.key === "Escape" || evt.key === "Esc");
+			} else {
+				isEscape = (evt.keyCode === 27);
+			}
+			if (isEscape) {
+				var iframe = document.getElementById("gameBox");
+				if (iframe != null) {
+					iframe.parentNode.removeChild(iframe);
+					var playButton = document.getElementById("startGame");
+					var lives = document.getElementById("lives");
+					var score = document.getElementById("score");
+					playButton.style.display = "inline";
+					lives.style.display = "none";
+					score.style.display = "none";
+				}
+			}
+		};
+		
+	</script>
+	
+</html>

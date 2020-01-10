@@ -1,0 +1,59 @@
+
+body {
+	background-color: #D75C50;
+	background-image: radial-gradient(red, #EEA30F, #D75C50);
+}	
+
+#title {
+	position: absolute;
+	font-family: 'magic_school_oneregular';
+	font-size: 5em;
+	top: 7vh;
+	left: 27vw;
+}
+
+#startGame {
+	position: relative;	
+	font-family: 'magic_school_oneregular';
+	font-size: 1.2em;
+	color: blue;
+	background-color: F5123B;
+	border-color: black;
+	width: 5vw;
+	top: 18vh;
+	left: 27vw;
+}
+
+#lives {
+   position: relative;
+   font-size: 2em;
+   font-family: 'magic_school_oneregular';
+   top: 0px;
+   left: 0vw;
+   display: none;
+}
+
+#score {
+   position: relative;
+   font-size: 2em;
+   font-family: 'magic_school_oneregular';
+   top: 0px;
+   left: 730px;
+   display: none;
+}
+
+#gameContainer {
+	position: absolute;
+	top: 30vh;
+	left: 20vw;
+	width: 900px;
+	height: 720px;
+}
+
+#gameBox {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 900px;
+	height: 670px;
+}
