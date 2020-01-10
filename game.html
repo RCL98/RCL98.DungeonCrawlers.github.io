@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/game_styles.css">
+		<link rel = "stylesheet" href = "styles/magic/stylesheet.css">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<title> THE GAME </title>
+	</head>
+	
+	<body>
+		
+		<div id = "theGameBox" >
+			<h3 id = "lives">Lives: 0</h3>
+			<h3 id = "score">Score: 0</h3>
+		</div>
+	
+		<script src="scripts/gameEngine.js"></script>
+		<script src="scripts/levels.js"></script>
+		<script src="scripts/gameRender.js"></script>
+		<script>
+		window.onload = function(){ 
+			runGame(GAME_LEVELS, CanvasDisplay);
+		};
+			
+		</script>
+		
+	</body>
+
+</html> 
